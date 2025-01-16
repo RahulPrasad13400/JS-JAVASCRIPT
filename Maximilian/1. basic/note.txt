@@ -1,0 +1,8 @@
+parseInt(input)----------//it can be used to convert a string to a number without decimal places 
+
++         -----------      by using + infront of string can be used to convert string to a number 
+
+input.toString() --------- used to convert a number to string 
+
+Array = push(), pop()        eg, num.push(3)
+
