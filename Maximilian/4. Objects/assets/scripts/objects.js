@@ -4,6 +4,7 @@ const searchBtn = document.getElementById('search-btn')
 const movies = []
 
 const renderMovies = (filter = '') => {
+    console.log("filter", filter)
     const movieList = document.getElementById('movie-list')
     if(movies.length === 0){
         movieList.classList.remove('visible')
@@ -12,7 +13,9 @@ const renderMovies = (filter = '') => {
     }
     movieList.innerHTML = ''
 
-    const filteredMovies = !filter ? movies :  movies.filter(movie=>movie.info.title.includes(filter))
+    const filteredMovies = filter === '' 
+    ? movies 
+    : movies.filter(movie => movie.info.title.toLowerCase().includes(filter.toLowerCase()));
 
     filteredMovies.forEach((movie)=>{
         const movieEl = document.createElement('li')
@@ -44,7 +47,7 @@ const addMovieHandler = () => {
             [extraName] : extraValue
         },
         id : Math.random().toString(),
-        getFormattedTitle : function(){
+        getFormattedTitle(){
             return this.info.title.toUpperCase()
         }
     }
@@ -59,4 +62,5 @@ const searchMovieHandler = () => {
 }
 
 addMovieBtn.addEventListener('click', addMovieHandler)
+searchBtn.addEventListener('click', searchMovieHandler)
 
