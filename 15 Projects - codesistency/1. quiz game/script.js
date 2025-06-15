@@ -13,53 +13,54 @@ const resultMessage = document.getElementById("result-message");
 const restartButton = document.getElementById("restart-btn");
 const progressBar = document.getElementById("progress");
 
-const quizQuestions  = [
-    {
-        question : "Favourite Fictional cartoon character",
-        answers : [
-            { text : "Bubu dudu", correct : true},
-            { text : "chotta beam", correct : false},
-            { text : "tom and jerry", correct : false},
-            { text : "Oggy and the Cockroaches", correct : false},
-        ]
-    },
-    {
-        question : "Which is the favourite food of peekus",
-        answers : [
-            { text : "Biriyani", correct : false},
-            { text : "Vegetarian foods", correct : false},
-            { text : "Mandi", correct : true},
-            { text : "Shawarma", correct : false}
-        ] 
-    },
-    {
-        question : "First Movie date of bubu dudu",
-        answers : [
-            { text : "Jhon wick", correct : false},
-            { text : "Romanjam", correct : true},
-            { text : "Bromance", correct : false},
-            { text : "Kishkindha Kaandam", correct : false},
-        ]
-    },
-    {
-        question : "First place bubu dudu visited together",
-        answers : [
-            { text : "Nadukani", correct : true},
-            { text : "Beach", correct : false},
-            { text : "bhoothathankettu", correct : false},
-            { text : "Inchathotty", correct : false},
-        ]
-    },
-    {
-        question : "Which is the first place peekus first kissed",
-        answers : [
-            { text : "Near a road side", correct : false},
-            { text : "Nadukani", correct : false},
-            { text : "Inchathotty", correct : false},
-            { text : "bhoothathankettu", correct : true},
-        ]
-    }
-]
+const quizQuestions = [
+  {
+    question: "Which country won the FIFA World Cup in 2018?",
+    answers: [
+      { text: "France", correct: true },
+      { text: "Brazil", correct: false },
+      { text: "Germany", correct: false },
+      { text: "Argentina", correct: false }
+    ]
+  },
+  {
+    question: "Who is known as the 'King of Football'?",
+    answers: [
+      { text: "Pelé", correct: true },
+      { text: "Diego Maradona", correct: false },
+      { text: "Cristiano Ronaldo", correct: false },
+      { text: "David Beckham", correct: false }
+    ]
+  },
+  {
+    question: "Which English club is nicknamed 'The Red Devils'?",
+    answers: [
+      { text: "Manchester United", correct: true },
+      { text: "Chelsea", correct: false },
+      { text: "Arsenal", correct: false },
+      { text: "Liverpool", correct: false }
+    ]
+  },
+  {
+    question: "Which player is famous for scoring the 'Hand of God' goal?",
+    answers: [
+      { text: "Diego Maradona", correct: true },
+      { text: "Lionel Messi", correct: false },
+      { text: "Neymar", correct: false },
+      { text: "Kylian Mbappé", correct: false }
+    ]
+  },
+  {
+    question: "Which country has won the most FIFA World Cups?",
+    answers: [
+      { text: "Brazil", correct: true },
+      { text: "Italy", correct: false },
+      { text: "Germany", correct: false },
+      { text: "Argentina", correct: false }
+    ]
+  }
+];
+
 
 let currentQuestionIndex = 0
 let currentScore = 0
