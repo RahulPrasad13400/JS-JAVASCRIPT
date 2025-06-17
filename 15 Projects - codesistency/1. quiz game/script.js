@@ -63,7 +63,7 @@ const quizQuestions = [
 
 
 let currentQuestionIndex = 0
-let currentScore = 0
+let score = 0
 let answerDisabled = false
 
 totalQuestionsSpan.textContent = quizQuestions.length
